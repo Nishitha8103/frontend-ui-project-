@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Coastal Kitchen</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                🌊 Coastal Kitchen
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Offers</a>
+                    </li>
+
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i> Cart
+                            <span id="cartCount" class="badge bg-warning text-dark">0</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="wishlist.html" title="Wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                            <span id="wishlistCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html" title="Profile">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HEADER -->
+
+    <section class="py-5 text-center bg-light">
+
+        <div class="container">
+
+            <h1 class="fw-bold">
+                Our Coastal Menu
+            </h1>
+
+            <p class="lead">
+                Traditional Coastal Flavours, Seafood Specials, Biryanis & Desserts
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH BAR -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <input id="menuSearch" type="search" class="form-control w-50 mx-auto" placeholder="Search dishes, e.g. Biryani, Seafood...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BREAKFAST -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                Breakfast Specials
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Korirotti -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://myfoodstory.com/wp-content/uploads/2015/11/chicken-kori-rotti-mangalorean-chicken-curry-recipe.1024x1024.jpg"
+                            class="img-fluid">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Kori Rotti</h4>
+
+                            <p>
+                                Traditional coastal food.
+                            </p>
+
+                            <h5>₹120</h5>
+
+                            <button type="button" class="btn btn-warning add-cart-btn me-2">
+                                🛒 Add to Cart
+                            </button>
+
+                            <button type="button" class="btn btn-danger buy-now-btn">
+                                ⚡ Buy Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Idli -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=800" class="img-fluid">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Idli</h4>
+
+                            <p>
+                                Soft idlis served with chutney and sambar.
+                            </p>
+
+                            <h5>₹80</h5>
+                            <button type="button" class="btn btn-warning add-cart-btn me-2">
+                                🛒 Add to Cart
+                            </button>
+
+                            <button type="button" class="btn btn-danger buy-now-btn">
+                                ⚡ Buy Now
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Neer Dosa -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/09/35/c9/neer-dosa.jpg?w=500&h=400&s=1"
+                            class="img-fluid">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Neer Dosa</h4>
+
+                            <p>
+                                Authentic coastal breakfast speciality.
+                            </p>
+
+                            <h5>₹110</h5>
+
+                            <button type="button" class="btn btn-warning add-cart-btn me-2">
+                                🛒 Add to Cart
+                            </button>
+
+                            <button type="button" class="btn btn-danger buy-now-btn">
+                                ⚡ Buy Now
+                            </button>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+    </section>
+
+    <!-- BIRYANI SECTION -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                Biryani Specials
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img
+                            src="https://www.tandoormlr.com/wp-content/uploads/2025/10/Best-Chicken-Biryani-in-Mangalore-Tandoor-Family-Restaurant.webp">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Chicken Biryani</h4>
+
+                            <p>
+                                Aromatic chicken biryani with spices.
+                            </p>
+
+                            <h5>₹249</h5>
+
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img
+                            src="https://tse3.mm.bing.net/th/id/OIP.yu1c0La2doVvnEAth-9jZQHaEK?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Mutton Biryani</h4>
+
+                            <p>
+                                Premium mutton cooked with basmati rice.
+                            </p>
+
+                            <h5>₹329</h5>
+
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://i.pinimg.com/736x/d3/ef/30/d3ef306fa8e29781e4f117a86e8be0d5.jpg">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Prawns Biryani</h4>
+
+                            <p>
+                                Fresh prawns cooked with aromatic rice.
+                            </p>
+
+                            <h5>₹379</h5>
+
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PART 1 END -->
+    <!-- SEAFOOD SPECIALS -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                Seafood Specials
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Anjal Fry -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://images.indianexpress.com/2016/04/anjal-masala-fry_820_nikhil-pai.jpg"
+                            class="img-fluid">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Anjal Fry</h4>
+
+                            <p>
+                                Fresh king fish marinated with coastal spices.
+                            </p>
+
+                            <h5>₹299</h5>
+
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fish Fry -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://i.pinimg.com/originals/56/33/29/563329837d613e32d8303c93b5a3e5c5.jpg"
+                            class="img-fluid">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Bangude pulimunchi</h4>
+
+                            <p>
+                                Coastal style spicy fish masala.
+                            </p>
+
+                            <h5>₹279</h5>
+
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Prawns Ghee Roast -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="food-item-card">
+
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.j3RhzbzuSdQN4VllFXqXSwHaJ4?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            class="img-fluid">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Prawns Ghee Roast</h4>
+
+                            <p>
+                                Traditional Mangalorean spicy prawns.
+                            </p>
+
+                            <h5>₹349</h5>
+
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JUICES -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                Fresh Juices
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="food-item-card">
+
+                        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800">
+
+                        <div class="p-3 text-center">
+
+                            <h5>Pineapple Juice</h5>
+
+                            <h6>₹90</h6>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="food-item-card">
+
+                        <img
+                            src="https://tse1.explicit.bing.net/th/id/OIP.tXPNYmPR4nKlAp8KrB-VJQAAAA?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+                        <div class="p-3 text-center">
+
+                            <h5>Mango Juice</h5>
+
+                            <h6>₹100</h6>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="food-item-card">
+
+                        <img
+                            src="https://tse4.mm.bing.net/th/id/OIP.B_vAEu6a0J-DOoL72qmFhgHaLH?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+                        <div class="p-3 text-center">
+
+                            <h5>Watermelon Juice</h5>
+
+                            <h6>₹80</h6>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="food-item-card">
+
+                        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=800">
+
+                        <div class="p-3 text-center">
+
+                            <h5>Mixed Fruit Juice</h5>
+
+                            <h6>₹120</h6>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DESSERTS -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                Desserts & Ice Creams
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="food-item-card">
+
+                        <img
+                            src="https://1.bp.blogspot.com/-CHwRwv0jh0I/WwG5NmyBh0I/AAAAAAAAIYc/l86hSLSbzDsokZMqze3Qt3P1SS0IkujjACLcBGAs/s1600/Sundae%2BIce%2BCream%2BGadbad.jpg">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Gadbad</h4>
+
+                            <p>Coastal Famous ice Cream.</p>
+
+                            <h5>₹120</h5>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="food-item-card">
+
+                        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Vanilla Ice Cream</h4>
+
+                            <p>Classic frozen delight.</p>
+
+                            <h5>₹99</h5>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="food-item-card">
+
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800">
+
+                        <div class="p-3 text-center">
+
+                            <h4>Chocolate Sundae</h4>
+
+                            <p>Topped with chocolate syrup.</p>
+
+                            <h5>₹149</h5>
+                            <button type="button" class="btn btn-danger buy-btn">Buy</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h4>🌊 Coastal Kitchen</h4>
+
+            <p>
+                Fresh Seafood • Coastal Meals • Biryanis • Desserts
+            </p>
+
+            <hr>
+
+            <p>
+                © 2026 Coastal Kitchen. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+    <div id="cartToast" class="cart-toast">
+        <div class="cart-toast-body">
+            <span id="toastMessage">Item added to cart</span>
+            <button id="goToCartBtn" class="btn btn-sm btn-light ms-3">GO TO CART</button>
+        </div>
+    </div>
+
+    <div id="wishlistToast" class="cart-toast" style="background: rgba(220,53,69,0.95);">
+        <div class="cart-toast-body">
+            <span id="wishlistToastMessage">Added to My Wishlist</span>
+        </div>
+    </div>
+
+    <style>
+        .cart-toast {
+            position: fixed;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            background: rgba(33, 37, 41, 0.95);
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 1050;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            max-width: calc(100% - 40px);
+        }
+        .cart-toast-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        .wishlist-toast .cart-toast-body {
+            background: rgba(220,53,69,0.95);
+        }
+        .wishlist-btn i {
+            color: #c62828;
+            transition: color .2s ease;
+        }
+        .wishlist-btn .fa-solid {
+            color: #8b0000;
+        }
+    </style>
+    <script>
+        function showCartToast(name) {
+            const toast = document.getElementById('cartToast');
+            const message = document.getElementById('toastMessage');
+            const goToCartBtn = document.getElementById('goToCartBtn');
+
+            if (!toast || !message || !goToCartBtn) return;
+
+            message.textContent = `${name} added to cart`;
+            toast.style.display = 'flex';
+            clearTimeout(window.cartToastTimer);
+
+            goToCartBtn.onclick = function () {
+                window.location.href = 'cart.html';
+            };
+
+            window.cartToastTimer = setTimeout(() => {
+                toast.style.display = 'none';
+            }, 4000);
+        }
+
+        function showWishlistToast(name) {
+            const toast = document.getElementById('wishlistToast');
+            const message = document.getElementById('wishlistToastMessage');
+            if (!toast || !message) return;
+            message.textContent = `${name} added to My Wishlist`;
+            toast.style.display = 'flex';
+            clearTimeout(window.wishlistToastTimer);
+            window.wishlistToastTimer = setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3500);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof updateCartCount === 'function') {
+                updateCartCount();
+            }
+            if (typeof updateWishlistCount === 'function') {
+                updateWishlistCount();
+            }
+
+            document.querySelectorAll('.food-item-card').forEach(card => {
+                card.style.position = 'relative';
+
+                const footer = card.querySelector('.p-3.text-center');
+                if (!footer) return;
+
+                const wishlistBtn = document.createElement('button');
+                wishlistBtn.type = 'button';
+                wishlistBtn.className = 'btn btn-outline-danger btn-sm wishlist-btn';
+                wishlistBtn.title = 'Add to Wishlist';
+                wishlistBtn.innerHTML = '<i class="fa-regular fa-heart"></i>';
+                card.appendChild(wishlistBtn);
+
+                const existingAddButton = footer.querySelector('button.btn-warning');
+                if (existingAddButton) {
+                    existingAddButton.classList.add('add-cart-btn');
+                    existingAddButton.textContent = '🛒 Add to Cart';
+                    existingAddButton.onclick = null;
+                }
+
+                const existingBuyButton = footer.querySelector('button.buy-btn, button.btn-danger');
+                if (existingBuyButton) {
+                    existingBuyButton.classList.remove('buy-btn');
+                    existingBuyButton.classList.add('buy-now-btn');
+                    existingBuyButton.textContent = '⚡ Buy Now';
+                    existingBuyButton.onclick = null;
+                }
+
+                if (!footer.querySelector('.add-cart-btn')) {
+                    const addButton = document.createElement('button');
+                    addButton.type = 'button';
+                    addButton.className = 'btn btn-warning add-cart-btn me-2';
+                    addButton.textContent = '🛒 Add to Cart';
+                    if (existingBuyButton) {
+                        footer.insertBefore(addButton, existingBuyButton);
+                    } else {
+                        footer.appendChild(addButton);
+                    }
+                }
+            });
+
+            // Attach direct handlers to buy buttons to stop propagation
+            function attachBuyNowHandlers() {
+                document.querySelectorAll('.buy-now-btn, .buy-btn').forEach(btn => {
+                    if (btn._hasBuyHandler) return;
+                    btn._hasBuyHandler = true;
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const item = getItemData(btn);
+                        showBuyModal(item);
+                    });
+                });
+            }
+
+            attachBuyNowHandlers();
+
+            function getItemData(button) {
+                const card = button.closest('.food-item-card');
+                const img = card.querySelector('img')?.src || '';
+                const nameEl = card.querySelector('h4, h5');
+                const name = nameEl ? nameEl.textContent.trim() : 'Item';
+                const priceEl = Array.from(card.querySelectorAll('h5, h6, p')).find(el => /₹\s*\d+/.test(el.textContent));
+                const price = priceEl ? parseFloat(priceEl.textContent.replace(/[^0-9.]/g, '')) : 0;
+                return { name, price, img };
+            }
+
+            function attachActionHandlers() {
+                document.querySelectorAll('.add-cart-btn').forEach(btn => {
+                    if (btn._hasAddHandler) return;
+                    btn._hasAddHandler = true;
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const item = getItemData(btn);
+                        if (typeof addToCart === 'function') {
+                            addToCart(item.name, item.price, item.img);
+                        } else {
+                            alert('Cart function not available.');
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.wishlist-btn').forEach(btn => {
+                    if (btn._hasWishlistHandler) return;
+                    btn._hasWishlistHandler = true;
+                    btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const item = getItemData(btn);
+                        if (typeof addToWishlist === 'function') {
+                            addToWishlist(item.name, item.price, item.img);
+                            if (typeof updateWishlistCount === 'function') {
+                                updateWishlistCount();
+                            }
+                            const icon = btn.querySelector('i');
+                            if (icon) {
+                                icon.classList.remove('fa-regular');
+                                icon.classList.add('fa-solid');
+                            }
+                        } else {
+                            alert('Wishlist function not available.');
+                        }
+                    });
+                });
+            }
+
+            attachActionHandlers();
+        });
+    </script>
+
+    <!-- Buy Now Modal -->
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyModalTitle">Order Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="buyModalImg" src="" class="img-fluid mb-3" style="max-height:180px; object-fit:cover;">
+                    <h5 id="buyModalName"></h5>
+                    <p id="buyModalPrice" class="mb-2"></p>
+
+                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                        <button class="btn btn-secondary" id="buyQtyDecrease">-</button>
+                        <button class="btn btn-light" id="buyQtyDisplay">1</button>
+                        <button class="btn btn-secondary" id="buyQtyIncrease">+</button>
+                    </div>
+
+                    <h5>Total: ₹<span id="buyModalTotal">0</span></h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" id="confirmPlaceOrder">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body py-5">
+                    <i class="fa-solid fa-check-circle fa-3x text-success mb-3"></i>
+                    <h5 class="mb-3">Order confirmed successfully!</h5>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal and search logic
+        const buyModal = new bootstrap.Modal(document.getElementById('buyModal'));
+        let buyModalQty = 1;
+        let buyModalItem = null;
+
+        function showBuyModal(item) {
+            buyModalItem = item;
+            buyModalQty = 1;
+            document.getElementById('buyModalImg').src = item.img || '';
+            document.getElementById('buyModalName').textContent = item.name;
+            document.getElementById('buyModalPrice').textContent = `Price: ₹${item.price}`;
+            document.getElementById('buyQtyDisplay').textContent = buyModalQty;
+            document.getElementById('buyModalTotal').textContent = (item.price * buyModalQty).toFixed(2);
+            buyModal.show();
+        }
+
+        document.getElementById('buyQtyIncrease').addEventListener('click', function () {
+            buyModalQty++;
+            document.getElementById('buyQtyDisplay').textContent = buyModalQty;
+            document.getElementById('buyModalTotal').textContent = (buyModalItem.price * buyModalQty).toFixed(2);
+        });
+
+        document.getElementById('buyQtyDecrease').addEventListener('click', function () {
+            if (buyModalQty > 1) buyModalQty--;
+            document.getElementById('buyQtyDisplay').textContent = buyModalQty;
+            document.getElementById('buyModalTotal').textContent = (buyModalItem.price * buyModalQty).toFixed(2);
+        });
+
+        document.getElementById('confirmPlaceOrder').addEventListener('click', function () {
+            if (!buyModalItem) return;
+            buyModal.hide();
+            buyModalItem = null;
+            const orderSuccessModal = new bootstrap.Modal(document.getElementById('orderSuccessModal'));
+            orderSuccessModal.show();
+        });
+
+        // Search filter
+        document.getElementById('menuSearch').addEventListener('input', function (e) {
+            const q = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('.food-item-card').forEach(card => {
+                const name = (card.querySelector('h4, h5')?.textContent || '').toLowerCase();
+                if (!q || name.includes(q)) {
+                    card.parentElement.style.display = '';
+                } else {
+                    card.parentElement.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
